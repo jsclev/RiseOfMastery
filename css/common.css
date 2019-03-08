@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#active-question-inner-container {
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    width: 320px;
+    height: 600px;
+    z-index: 10;
+    font-size: larger;
+}
+
+#feedback-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+#answers-container {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#next-question-button {
+    background: url(../assets/images/next-question-cold.png) center top no-repeat;
+    width: 280px;
+    height: 50px;
+    font-weight: bold;
+    color: #ffcc99;
+    text-align: center;
+    padding-top:20px;
+    cursor: default;
+    margin-top: 50px;
+}
+
+#stats-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 423px;
+    height: 80px;
+    color: #e9ce9a;
+    font-weight: bold;
+    background: url(../assets/images/stats-bg.png) center top no-repeat;
+}
+
+#progress-correct-outer {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 40px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #252525;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+#progress-correct-inner-label {
+    display: inline-block;
+    background-color: #86ef4f;
+    margin: 4px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: larger;
+    font-weight: bold;
+    color: #252525;
+    width: 100px;
+    padding-left: 10px;
+}
+
+#progress-correct-inner {
+    display: inline-block;
+    background-color: #86ef4f;
+    margin: 4px 4px 4px 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: larger;
+    color: #252525;
+    font-weight: bold;
+    text-align: right;
+    min-width: 40px;
+}
+
+#progress-complete-outer {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 5px;
+    width: 95%;
+    color: #e9ce9a;
+    margin: 0 auto;
+    background-color: #252525;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+#progress-complete-inner-label {
+    display: inline-block;
+    background-color: #86ef4f;
+    margin: 4px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: larger;
+    font-weight: bold;
+    color: #252525;
+    width: 100px;
+    padding-left: 10px;
+}
+
+#progress-complete-inner {
+    display: inline-block;
+    background-color: #86ef4f;
+    margin: 4px 4px 4px 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: larger;
+    text-align: right;
+    color: #252525;
+    min-width: 40px;
+}
+
+#active-unit-name {
+    position: absolute;
+    left: 3%;
+    bottom: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 6px;
+}
+
+#currency-value {
+    margin-left: 50px;
+    width: 50px;
+    text-align: center;
+    margin-top: 8px;
+}

@@ -47,7 +47,12 @@ export default {
             commit('setIsCorrect', isCorrect);
 
             if (isCorrect) {
-                rootState.game.sound.play('correct');
+                const correctAudio = rootState.game.sound.add('correct');
+                correctAudio.setVolume(.25);
+                // correctAudio.setLoop(true);
+                correctAudio.play();
+
+                // rootState.game.sound.play('correct');
                 dispatch('player/incrementCurrency', null, {root: true});
             }
         },

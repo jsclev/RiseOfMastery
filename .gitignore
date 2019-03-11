@@ -1,8 +1,9 @@
 # Ignore the main build.properties file
 build.properties
 
-# Ignore the dev Nginx configuration file
-devops/nginx/nginx.dev.conf
+# Ignore sound files
+assets/sounds/*.wav
+assets/sounds/*.mp3
 
 # Ignore log files
 *.log
@@ -11,10 +12,10 @@ logs/
 # Ignore the env directory for virtualenv projects
 venv
 
-# Ignore the .retry files that ansible creates
+# Ignore the .retry files that Ansible creates
 *.retry
 
-# Ignore JetBrains IntelliJ IDEA project files
+# Ignore JetBrains project files
 *.idea
 
 # Ignore the Selenium settings file
@@ -36,7 +37,6 @@ __pycache__
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
 Thumbs.db
 
 *.swp
@@ -50,6 +50,3 @@ web/static/pdfs
 
 # Ignoring node modules
 node_modules
-
-# Ignore the temp schema file
-zippymeals_schema_only

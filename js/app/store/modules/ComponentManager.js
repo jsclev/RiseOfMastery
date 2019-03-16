@@ -1,12 +1,12 @@
-import choreLog from './ChoreLog.js'
+import questionLog from './ChoreLog.js'
 
 export default {
     namespaced: true,
     modules: {
-        choreLog: choreLog
+        questionLog: questionLog
     },
     state: {
-        name: 'Joshua',
+        components: [],
         numCurrency: 1
     },
     actions: {

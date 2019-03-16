@@ -1,7 +1,11 @@
 import store from '../store/Game.js'
 const AnswerFeedback = () => import('./AnswerFeedback.js');
-const Currency = () => import('./Currency.js');
-const PlayerProgress = () => import('./PlayerProgress.js');
+const Currency = () => import('./header/Currency.js');
+const PlayerProgress = () => import('./footer/PlayerProgress.js');
+const MainMap = () => import('./map/Main.js');
+const AssembleUnits = () => import('./workshop/AssembleUnits.js');
+const Chores = () => import('./chores/Chores.js');
+const TimeDisplay = () => import('./Time.js');
 
 export default {
     name: 'CurrentQuestion',
@@ -10,30 +14,30 @@ export default {
     },
     components: {
         AnswerFeedback,
+        AssembleUnits,
+        Chores,
         Currency,
-        PlayerProgress
+        MainMap,
+        PlayerProgress,
+        TimeDisplay
     },
     template: `
         <div id="main">
-            <currency></currency>
-            <player-progress></player-progress>
-            <form id="active-question-inner-container">
-                <div id="question-text" v-html="currentQuestion.text"></div>
-                <table id="answers-container">
-                    <tr v-for="answer in currentQuestion.answers">
-                        <td>
-                            <input :id="answer.answerId" 
-                                   type="radio"
-                                   :value="answer.answerId"
-                                   v-model="chosenAnswer"/>
-                        </td>
-                        <td>
-                            <label for="answer.answerId">{{ answer.text }}</label>
-                        </td>
-                    </tr>
-                </table>
-                <answer-feedback></answer-feedback>
-            </form>
+            <div id="header">
+                <div id="main-button" @click="setActiveScreen(0)"></div>
+                <div id="chores-button" @click="setActiveScreen(1)"></div>
+                <div id="build-button" @click="setActiveScreen(2)"></div>
+                <time-display></time-display>
+                <currency></currency>
+            </div>
+            <div id="main-content">
+                <main-map></main-map>
+                <assemble-units></assemble-units>
+                <chores></chores>
+            </div>
+            <div id="footer">
+                <player-progress></player-progress>
+            </div>
         </div>`,
     computed: {
         chosenAnswer: {
@@ -49,8 +53,8 @@ export default {
         }
     },
     methods: {
-        selectAnswer(answerId) {
-            store.dispatch('questionManager/setAnswer', {answerId: answerId}, {root: true});
+        setActiveScreen(activeScreen) {
+            store.dispatch('setActiveScreen', activeScreen, {root: true});
         }
     }
 };

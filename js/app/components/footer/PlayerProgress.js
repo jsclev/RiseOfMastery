@@ -1,20 +1,11 @@
-import store from '../store/Game.js'
+import store from '../../store/Game.js'
 
 export default {
     name: 'PlayerProgress',
     template: `
         <div id="player-progress">
             <div id="active-unit-name">
-                 {{ activeUnit.name }}
-            </div>
-            <div id="progress-correct-outer">
-                <div id="progress-correct-inner-label">
-                    Correct
-                </div>
-                <div id="progress-correct-inner"
-                     :style="{ width: percentageCorrect + '%' }">
-                    {{ percentageCorrect }}%
-                </div>
+                 ALL SYSTEMS ONLINE
             </div>
             <div id="progress-complete-outer">
                 <div id="progress-complete-inner-label">

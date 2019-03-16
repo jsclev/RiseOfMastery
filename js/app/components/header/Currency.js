@@ -1,10 +1,10 @@
-import store from '../store/Game.js'
+import store from '../../store/Game.js'
 
 export default {
     name: 'Currency',
     template: `
         <div id="stats-container">
-            <div id="currency-value">{{ currencyValue }}</div>
+            <div id="currency-value">Credits: {{ currencyValue }}</div>
         </div>`,
     computed: {
         currencyValue() {

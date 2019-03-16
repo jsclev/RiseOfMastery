@@ -1,25 +1,148 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     background-color: black;
+    height: 100%;
+    font-family: Courier New;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
+/*canvas {*/
+    /*!*position: absolute;*!*/
+    /*!*top: 0;*!*/
+    /*!*right: 0;*!*/
+    /*!*bottom: 0;*!*/
+    /*!*left: 0;*!*/
+    /*z-index: 1;*/
+/*}*/
 
 #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    height: 100%;
+    min-height: 100%;
+}
+
+#header {
+    display: flex;
+    padding: 12px 12px 0 12px;
+}
+
+#main-content {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+#footer {
+    /*height: 65px;*/
+    padding: 0 12px 10px 12px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url("../assets/images/bg2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units {
+    display: flex;
+    height: 100%;
+    background-image: url("../assets/images/assembly-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mech {
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container div {
+    border: 2px solid white;
+}
+
+#assemble-units-left {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inventory {
+    background-image: url("../assets/images/parts-inventory.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#part-stats {
+    background-image: url("../assets/images/stats.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#assemble-units-right {
+   flex: 1;
+    background-image: url("../assets/images/mech-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#chores {
+    width: 100%;
+    height: 100%;
     z-index: 2;
+    /*background-image: url("../assets/images/assemble-unit.png");*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-button {
+    display: inline-block;
+    width: 73px;
+    height: 71px;
+    background-image: url("../assets/images/icon-map.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#chores-button {
+    display: inline-block;
+    width: 73px;
+    height: 71px;
+    background-image: url("../assets/images/icon-chores.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#build-button {
+    display: inline-block;
+    width: 73px;
+    height: 71px;
+    background-image: url("../assets/images/build.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #active-question-inner-container {
@@ -56,22 +179,18 @@ canvas {
 }
 
 #stats-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 423px;
-    height: 80px;
-    color: #e9ce9a;
+    color: #2aaae5;
     font-weight: bold;
-    background: url(../assets/images/stats-bg.png) center top no-repeat;
+    text-align: right;
+    /*background: url(../assets/images/stats-bg.png) center top no-repeat;*/
 }
 
 #progress-correct-outer {
-    position: absolute;
-    left: 3%;
-    right: 3%;
-    bottom: 40px;
-    width: 95%;
+    /*position: absolute;*/
+    /*left: 3%;*/
+    /*right: 3%;*/
+    /*bottom: 40px;*/
+    /*width: 95%;*/
     margin: 0 auto;
     background-color: #252525;
     border-radius: 12px;
@@ -80,7 +199,7 @@ canvas {
 
 #progress-correct-inner-label {
     display: inline-block;
-    background-color: #86ef4f;
+    background-color: #2aaae5;
     margin: 4px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -93,7 +212,7 @@ canvas {
 
 #progress-correct-inner {
     display: inline-block;
-    background-color: #86ef4f;
+    background-color: #2aaae5;
     margin: 4px 4px 4px 0;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -105,11 +224,11 @@ canvas {
 }
 
 #progress-complete-outer {
-    position: absolute;
-    left: 3%;
-    right: 3%;
-    bottom: 5px;
-    width: 95%;
+    /*position: absolute;*/
+    /*left: 3%;*/
+    /*right: 3%;*/
+    /*bottom: 5px;*/
+    /*width: 95%;*/
     color: #e9ce9a;
     margin: 0 auto;
     background-color: #252525;
@@ -119,7 +238,7 @@ canvas {
 
 #progress-complete-inner-label {
     display: inline-block;
-    background-color: #86ef4f;
+    background-color: #2aaae5;
     margin: 4px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -132,7 +251,7 @@ canvas {
 
 #progress-complete-inner {
     display: inline-block;
-    background-color: #86ef4f;
+    background-color: #2aaae5;
     margin: 4px 4px 4px 0;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -143,18 +262,58 @@ canvas {
 }
 
 #active-unit-name {
-    position: absolute;
-    left: 3%;
-    bottom: 80px;
-    color: white;
+    /*position: absolute;*/
+    /*left: 3%;*/
+    /*bottom: 40px;*/
+    color: #2aaae5;
     font-weight: bold;
     font-size: larger;
     margin-left: 6px;
 }
 
 #currency-value {
-    margin-left: 50px;
-    width: 50px;
+    text-align: right;
+    font-size: x-large;
+}
+
+#time-container {
+    flex: 1;
+}
+
+#time-value {
+    color: #2aaae5;
     text-align: center;
-    margin-top: 8px;
+    font-size: x-large;
+}
+
+#chore-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chore-item {
+    display: flex;
+    align-items: center;
+    background-color: #182d53;
+    color: #2aaae5;
+    border: #2aaae5 2px solid;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 500px;
+    padding: 12px;
+}
+
+.chore-item-text {
+    flex: 1;
+}
+
+.chore-item-value {
+    border-radius: 30px;
+    background-color: #fac04e;
+    border: 4px solid #ae4b25;
+    color: #ae4b25;
+    padding: 8px;
+    font-weight: bold;
 }

@@ -1,22 +1,27 @@
-import questionLog from './ChoreLog.js'
-
 export default {
     namespaced: true,
-    modules: {
-        questionLog: questionLog
-    },
     state: {
+        activeComponent: null,
         components: [],
-        numCurrency: 1
     },
     actions: {
-        incrementCurrency({commit}) {
-            commit('incrementCurrency');
+        setActiveComponent({commit}, componentId) {
+            commit('setActiveComponent', componentId);
+        },
+        setAvailableComponents({commit}, components) {
+            commit('setAvailableComponents', components);
         }
     },
     mutations: {
-        incrementCurrency(state) {
-            state.numCurrency++;
+        setActiveComponent(state, componentId) {
+            for (let component of state.components) {
+                if (component.componentId === componentId) {
+                    state.activeComponent = component;
+                }
+            }
+        },
+        setAvailableComponents(state, components) {
+            state.components = components;
         }
     }
 };

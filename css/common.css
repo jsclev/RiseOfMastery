@@ -6,65 +6,37 @@ html, body {
     font-family: Courier New;
 }
 
-/*canvas {*/
-    /*!*position: absolute;*!*/
-    /*!*top: 0;*!*/
-    /*!*right: 0;*!*/
-    /*!*bottom: 0;*!*/
-    /*!*left: 0;*!*/
-    /*z-index: 1;*/
-/*}*/
-
-#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 2;
+#main-wrapper {
     height: 100%;
     min-height: 100%;
 }
 
 #header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
     display: flex;
     padding: 12px 12px 0 12px;
+    /*background-color: rgba(0,0,0,0.35);*/
+    z-index: 100;
 }
 
 #main-content {
-    flex: 1;
-    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 100%;
 }
 
 #footer {
     /*height: 65px;*/
     padding: 0 12px 10px 12px;
-}
-
-#map {
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-image: url("../assets/images/bg2.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#assemble-units {
-    display: flex;
-    height: 100%;
-    background-image: url("../assets/images/assembly-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#mech {
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 .grid-container {
@@ -75,34 +47,12 @@ html, body {
     border: 2px solid white;
 }
 
-#assemble-units-left {
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
-}
-
-#inventory {
-    background-image: url("../assets/images/parts-inventory.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
-}
-
 #part-stats {
     background-image: url("../assets/images/stats.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
-}
-
-#assemble-units-right {
-   flex: 1;
-    background-image: url("../assets/images/mech-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #chores {
@@ -115,74 +65,34 @@ html, body {
     background-repeat: no-repeat;
 }
 
+.header-item {
+    border: 3px solid #2aaae5;
+    background-color: rgba(25, 45, 81, .6);
+    padding: 10px;
+    color: #2aaae5;
+    margin: 0 4px;
+}
+
 #main-button {
-    display: inline-block;
-    width: 73px;
-    height: 71px;
-    background-image: url("../assets/images/icon-map.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 
 #chores-button {
-    display: inline-block;
-    width: 73px;
-    height: 71px;
-    background-image: url("../assets/images/icon-chores.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 
 #build-button {
-    display: inline-block;
-    width: 73px;
-    height: 71px;
-    background-image: url("../assets/images/build.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-#active-question-inner-container {
-    position: absolute;
-    top: 200px;
-    left: 270px;
-    width: 320px;
-    height: 600px;
-    z-index: 10;
-    font-size: larger;
-}
-
-#feedback-container {
-    text-align: center;
-    margin-top: 20px;
-    padding-right: 40px;
-}
-
-#answers-container {
-    margin-top: 30px;
-    margin-left: 40px;
-}
-
-#next-question-button {
-    background: url(../assets/images/next-question-cold.png) center top no-repeat;
-    width: 280px;
-    height: 50px;
-    font-weight: bold;
-    color: #ffcc99;
-    text-align: center;
-    padding-top:20px;
-    cursor: default;
-    margin-top: 50px;
 }
 
 #stats-container {
     color: #2aaae5;
     font-weight: bold;
     text-align: right;
-    /*background: url(../assets/images/stats-bg.png) center top no-repeat;*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 #progress-correct-outer {
@@ -261,19 +171,29 @@ html, body {
     min-width: 40px;
 }
 
-#active-unit-name {
-    /*position: absolute;*/
-    /*left: 3%;*/
-    /*bottom: 40px;*/
-    color: #2aaae5;
-    font-weight: bold;
-    font-size: larger;
-    margin-left: 6px;
+#currency-value-container {
+    display: flex;
 }
 
 #currency-value {
+    margin-left: 8px;
+    font-size: 48px;
+}
+
+#level-container {
+    display: flex;
+}
+
+#level-value {
+    margin-left: 8px;
+    font-size: 48px;
+}
+
+#xp {
     text-align: right;
     font-size: x-large;
+    border: 3px solid #2aaae5;
+    padding: 8px;
 }
 
 #time-container {

@@ -1,4 +1,4 @@
-import choreLog from './ChoreLog.js'
+import choreLog from './ChoreManager.js'
 
 export default {
     namespaced: true,

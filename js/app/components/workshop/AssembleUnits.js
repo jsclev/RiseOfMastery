@@ -1,15 +1,29 @@
-import store from '../../store/Game.js'
+import store from '../../store/index.js'
+const Inventory = () => import('./Inventory.js');
+const ActiveComponentStats = () => import('./ActiveComponentStats.js');
+const ActiveUnitStats = () => import('./ActiveUnitStats.js');
+const AllUnits = () => import('./AllUnits.js');
 
 export default {
     name: 'AssembleUnits',
+    components: {
+        ActiveUnitStats,
+        ActiveComponentStats,
+        AllUnits,
+        Inventory
+    },
     template: `
         <div v-if="isVisible" id="assemble-units">
             <div id="assemble-units-left">
-                            <div id="inventory"></div>
-                <div id="part-stats"></div>
-</div>
-            <div id="assemble-units-right">
+                <inventory></inventory>
+                <active-component-stats></active-component-stats>
+            </div>
+            <div id="assemble-units-center">
 
+            </div>
+            <div id="assemble-units-right">
+                <active-unit-stats></active-unit-stats>
+                <all-units></all-units>
             </div>
         </div>`,
     computed: {

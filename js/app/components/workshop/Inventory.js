@@ -1,14 +1,23 @@
-import store from '../../store/Game.js'
+import store from '../../store/index.js'
 
 export default {
     name: 'Inventory',
     template: `
         <div id="inventory-container">
-
+            <div v-for="component in components" 
+                 class="inventory-component"
+                 @click="setActiveComponent(component.componentId)">
+                
+            </div>
         </div>`,
     computed: {
         components() {
-            return store.state.activeScreen === 2;
+            return store.state.componentManager.components;
+        }
+    },
+    methods: {
+        setActiveComponent(componentId) {
+            store.dispatch('componentManager/setActiveComponent', componentId, {root: true});
         }
     }
 };

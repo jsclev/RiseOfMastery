@@ -19,7 +19,6 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 42px;
 }
 
 #assemble-units-right {
@@ -28,7 +27,6 @@
     flex-direction: column;
     justify-content: left;
     margin-top: 110px;
-    margin-bottom: 42px;
     margin-right: 15px;
 }
 
@@ -81,10 +79,10 @@
     display: flex;
     flex-direction: column;
     min-width: 200px;
-    color: white;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(25, 45, 81, .6);
     border: 3px solid #2aaae5;
-    margin-top: 12px;
+    padding: 15px;
+    color: #2aaae5;
 }
 
 #active-unit-name {
@@ -95,4 +93,71 @@
     font-weight: bold;
     font-size: larger;
     margin-left: 6px;
+}
+
+.stat-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+.stat-title {
+    /*margin-top: 8px;*/
+}
+
+.stats-container-title {
+    font-size: large;
+}
+
+.stat-indicator-outer {
+    height: 18px;
+
+    background-image: linear-gradient(to right, darkgreen, lime);
+    /*padding: 4px;*/
+}
+
+.stat-indicator-inner {
+    /*background-color: #04b537;*/
+    background-color: black;
+    height: 100%;
+    float: right;
+}
+
+.stat-left-container {
+    width: 40px;
+    height: 40px;
+}
+
+.stat-right-container {
+    margin-left: 7px;
+    width: 100%;
+}
+
+.stat-category {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weight-indicator {
+    background-image: url('../assets/images/weight.png');
+}
+
+.damage-indicator {
+    background-image: url('../assets/images/damage.png');
+}
+
+.splash-damage-indicator {
+    background-image: url('../assets/images/splash-damage.png');
+}
+
+.range-indicator {
+    background-image: url('../assets/images/range.png');
+}
+
+.defense-indicator {
+    background-image: url('../assets/images/defense.png');
+}
+
+.movement-indicator {
+    background-image: url('../assets/images/movement.png');
 }

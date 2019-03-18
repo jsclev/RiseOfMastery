@@ -30,9 +30,9 @@ export default {
                 <assemble-units></assemble-units>
                 <chores></chores>
             </div>
-            <div id="footer">
-                <player-progress></player-progress>
-            </div>
+            <!--<div id="footer">-->
+                <!--<player-progress></player-progress>-->
+            <!--</div>-->
         </div>`,
     computed: {
         activeModule() {

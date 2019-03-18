@@ -8,13 +8,13 @@ export default {
             
             <div id="unit-loadout-stats">
                 <div>Weight: {{ weight }}</div>
-                <div>Attack: {{ attack }}</div>
+                <div>damage: {{ damage }}</div>
                 <div>Defense: {{ defense }}</div>
             </div>
         </div>`,
     computed: {
-        attack() {
-            return store.getters['unitManager/attack'];
+        damage() {
+            return store.getters['unitManager/damage'];
         },
         defense() {
             return store.getters['unitManager/defense'];

@@ -5,14 +5,14 @@ export default {
         name: 'ROC-13'
     },
     getters: {
-        attack(state) {
-            let attack = 0;
+        damage(state) {
+            let damage = 0;
 
             for (let component of state.components) {
-                attack += component.damage;
+                damage += component.damage;
             }
 
-            return attack;
+            return damage;
         },
         defense(state) {
             let defense = 0;

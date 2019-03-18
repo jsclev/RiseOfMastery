@@ -7,7 +7,7 @@ const components = [{
     range: 1,
     cost: 1,
     damage: 4,
-    weight: 10,
+    weight: 9,
     minSplashDamage: 0,
     defense: 3
 }, {
@@ -17,7 +17,7 @@ const components = [{
     range: 1,
     cost: 1,
     damage: 4,
-    weight: 10,
+    weight: 28,
     splashDamage: 0,
     defense: 3
 }, {
@@ -27,7 +27,7 @@ const components = [{
     range: 1,
     cost: 1,
     damage: 4,
-    weight: 10,
+    weight: 12,
     splashDamage: 0,
     defense: 3
 }, {
@@ -37,7 +37,7 @@ const components = [{
     range: 1,
     cost: 1,
     damage: 4,
-    weight: 10,
+    weight: 3,
     splashDamage: 0,
     defense: 3
 }, {
@@ -47,7 +47,7 @@ const components = [{
     range: 1,
     cost: 1,
     damage: 4,
-    weight: 10,
+    weight: 14,
     splashDamage: 0,
     defense: 3
 }];

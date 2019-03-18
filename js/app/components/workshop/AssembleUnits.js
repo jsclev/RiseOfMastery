@@ -23,7 +23,6 @@ export default {
             </div>
             <div id="assemble-units-right">
                 <active-unit-stats></active-unit-stats>
-                <all-units></all-units>
             </div>
         </div>`,
     computed: {

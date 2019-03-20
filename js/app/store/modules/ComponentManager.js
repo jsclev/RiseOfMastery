@@ -2,7 +2,24 @@ export default {
     namespaced: true,
     state: {
         activeComponent: null,
-        components: [],
+        heads: [],
+        chassis: [],
+        shortRangeArms: [],
+        midRangeArms: [],
+        longRangeArms: [],
+        legs:[]
+    },
+    getters: {
+        shortRangeArms(state) {
+            let damage = 0;
+
+            for (let component of state.components) {
+
+                damage += component.damage;
+            }
+
+            return damage;
+        }
     },
     actions: {
         setActiveComponent({commit}, componentId) {

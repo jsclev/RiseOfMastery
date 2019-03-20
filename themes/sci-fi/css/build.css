@@ -1,5 +1,5 @@
 .bg-workshop {
-    background-image: url("../assets/images/hangar.png");
+    background-image: url("../assets/images/build-bg.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
 #assemble-units-center {
     flex: 12 1 auto;
-    background-image: url("../assets/images/mech-bg.png");
+    background-image: url("../assets/images/assemble-active-unit-bg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

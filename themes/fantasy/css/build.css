@@ -1,0 +1,162 @@
+.bg-workshop {
+    background-image: url("../assets/images/build-bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+
+#assemble-units-center {
+    flex: 12 1 auto;
+    background-image: url("../assets/images/assemble-active-unit-bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units-right {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 110px;
+    margin-right: 15px;
+}
+
+#inventory-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+#active-component-stats-container {
+    color: #2aaae5;
+}
+
+.inventory-component {
+    /*flex: 1 1 0;*/
+    border: 3px solid #2aaae5;
+    color: #2aaae5;
+    font-weight: bold;
+    text-align: center;
+
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    background-color: rgba(25, 45, 81, .7);
+    background-image: url("../assets/images/rocket-launger.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.inventory-component-icon {
+    background-image: url("../../../assets/images/hammer-fist.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+#inventory {
+    background-image: url("../assets/images/parts-inventory.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#active-unit-stats-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background-color: rgba(25, 45, 81, .6);
+    border: 3px solid #2aaae5;
+    padding: 15px;
+    color: #2aaae5;
+}
+
+#active-unit-name {
+    color: #2aaae5;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.stat-container {
+    margin-top: 10px;
+    display: flex;
+}
+
+.stat-title {
+    /*margin-top: 8px;*/
+}
+
+.stats-container-title {
+    font-size: x-large;
+}
+
+.stat-indicator-outer {
+    height: 18px;
+    background-image: linear-gradient(to right, darkgreen, lime);
+}
+
+.stat-indicator-inner {
+    /*background-color: #04b537;*/
+    background-color: black;
+    height: 100%;
+    float: right;
+}
+
+.stat-left-container {
+    width: 40px;
+    height: 40px;
+}
+
+.stat-right-container {
+    margin-left: 7px;
+    width: 100%;
+}
+
+.stat-category {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weight-indicator {
+    background-image: url('../assets/images/weight.png');
+}
+
+.damage-indicator {
+    background-image: url('../assets/images/damage.png');
+}
+
+.splash-damage-indicator {
+    background-image: url('../assets/images/splash-damage.png');
+}
+
+.range-indicator {
+    background-image: url('../assets/images/range.png');
+}
+
+.defense-indicator {
+    background-image: url('../assets/images/defense.png');
+}
+
+.movement-indicator {
+    background-image: url('../assets/images/movement.png');
+}

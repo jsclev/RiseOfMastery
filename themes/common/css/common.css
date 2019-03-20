@@ -86,7 +86,6 @@ html, body {
 }
 
 #stats-container {
-    color: #2aaae5;
     font-weight: bold;
     text-align: right;
     flex: 1;

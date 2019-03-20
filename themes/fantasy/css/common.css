@@ -1,0 +1,11 @@
+#stats-container {
+    color: #A0522D;
+}
+
+.header-item {
+    border: 3px solid #A0522D;
+    background-color: rgba(43, 29, 14, .6);
+    padding: 10px;
+    color: #A0522D;
+    margin: 0 4px;
+}

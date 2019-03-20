@@ -23,7 +23,34 @@ export default {
 
             return defense;
         },
-        weight(state) {
+        movementLevel(state) {
+            let sum = 0;
+
+            for (let component of state.components) {
+                sum += component.movement;
+            }
+
+            return (sum / 5) * 100;
+        },
+        movementValue(state) {
+            let sum = 0;
+
+            for (let component of state.components) {
+                sum += component.movement;
+            }
+
+            return sum;
+        },
+        weightLevel(state) {
+            let weight = 0;
+
+            for (let component of state.components) {
+                weight += component.weight;
+            }
+
+            return weight;
+        },
+        weightValue(state) {
             let weight = 0;
 
             for (let component of state.components) {

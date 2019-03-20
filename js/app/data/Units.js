@@ -1,6 +1,7 @@
 import store from '../store/index.js'
 
 const components = [{
+    category: 'shortRangeArms',
     componentId: 1,
     name: 'Hammer Fist',
     level: 1,
@@ -9,7 +10,8 @@ const components = [{
     damage: 4,
     weight: 9,
     minSplashDamage: 0,
-    defense: 3
+    defense: 3,
+    movement: -1
 }, {
     componentId: 3,
     name: 'Armored Chassis',
@@ -19,7 +21,8 @@ const components = [{
     damage: 4,
     weight: 28,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    movement: -3
 }, {
     componentId: 4,
     name: 'Photon Blaster',
@@ -29,7 +32,8 @@ const components = [{
     damage: 4,
     weight: 12,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    movement: -1
 }, {
     componentId: 5,
     name: 'Thrusters',
@@ -39,7 +43,8 @@ const components = [{
     damage: 4,
     weight: 3,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    movement: 2
 }, {
     componentId: 5,
     name: 'Armored Legs',
@@ -49,7 +54,8 @@ const components = [{
     damage: 4,
     weight: 14,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    movement: 8
 }];
 
 store.dispatch('unitManager/setComponents', components, {root: true});

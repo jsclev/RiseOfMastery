@@ -3,7 +3,7 @@ import store from '../../store/index.js'
 export default {
     name: 'ActiveComponentStats',
     template: `
-        <div v-if="isVisible" id="active-component-stats-container">
+        <div v-if="isVisible" id="active-component-stats-container" class="container">
             <div>{{ activeComponent.name }}</div>
             <div>Damage: {{ activeComponent.damage }}</div>
             <div>Weight: {{ activeComponent.weight }}</div>

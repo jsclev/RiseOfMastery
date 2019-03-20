@@ -3,8 +3,8 @@ import store from '../../store/index.js'
 export default {
     name: 'ActiveUnitStats',
     template: `
-        <div id="active-unit-stats-container">
-            <div class="stats-container-title">{{ unitName }}</div>
+        <div id="active-unit-stats-container" class="container">
+            <div class="stats-container-title">{{ unitName }} Loadout</div>
             
             <div id="unit-loadout-stats">
                 <div class="stat-container">
@@ -60,10 +60,10 @@ export default {
                 <div class="stat-container">
                     <div class="stat-left-container stat-category movement-indicator"></div>
                     <div class="stat-right-container">
-                        <div class="stat-title">Movement ({{ movementValue}} tiles per turn)</div>
+                        <div class="stat-title">Movement</div>
                         <div class="stat-indicator-outer">
                             <div class="stat-indicator-inner"
-                                 :style="{ width: movementLevel + '%'}"></div>
+                                 :style="{ width: defense + '%'}"></div>
                         </div>
                     </div>
                 </div>
@@ -76,20 +76,14 @@ export default {
         defense() {
             return 100 - store.getters['unitManager/defense'];
         },
-        movementLevel() {
-            return 100 - store.getters['unitManager/movementLevel'];
-        },
-        movementValue() {
-            return store.getters['unitManager/movementValue'];
-        },
         unitName() {
             return store.state.unitManager.name;
         },
         weightLevel() {
-            return 100 - store.getters['unitManager/weightLevel'];
+            return 100 - store.getters['unitManager/weight'];
         },
         weightValue() {
-            return store.getters['unitManager/weightValue'];
+            return store.getters['unitManager/weight'];
         }
     },
     methods: {

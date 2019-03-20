@@ -19,9 +19,9 @@ export default {
         <div id="main-wrapper"
              :class="{ 'bg-main': activeModule === 0, 'bg-workshop': activeModule === 2 }">
             <div id="header">
-                <div id="main-button" class="fa fa-home fa-3x header-item" @click="setActiveScreen(0)"></div>
-                <div id="chores-button" class="fa fa-tasks fa-3x header-item" @click="setActiveScreen(1)"></div>
-                <div id="build-button" class="fa fa-tools fa-3x header-item" @click="setActiveScreen(2)"></div>
+                <div id="main-button" class="fa fa-home fa-3x header-item container" @click="setActiveScreen(0)"></div>
+                <div id="chores-button" class="fa fa-tasks fa-3x header-item container" @click="setActiveScreen(1)"></div>
+                <div id="build-button" class="fa fa-tools fa-3x header-item container" @click="setActiveScreen(2)"></div>
                 <!--<time-display></time-display>-->
                 <currency></currency>
             </div>

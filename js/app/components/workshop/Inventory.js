@@ -5,7 +5,7 @@ export default {
     template: `
         <div id="inventory-container">
             <div v-for="component in components" 
-                 class="inventory-component"
+                 class="inventory-component container"
                  @click="setActiveComponent(component.componentId)">
                 
             </div>

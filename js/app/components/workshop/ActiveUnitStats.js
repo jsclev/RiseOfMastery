@@ -3,7 +3,7 @@ import store from '../../store/index.js'
 export default {
     name: 'ActiveUnitStats',
     template: `
-        <div id="active-unit-stats-container">
+        <div id="active-unit-stats-container" class="container">
             <div class="stats-container-title">{{ unitName }} Loadout</div>
             
             <div id="unit-loadout-stats">

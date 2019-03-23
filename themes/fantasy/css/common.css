@@ -9,3 +9,12 @@
     color: #A0522D;
     margin: 0 4px;
 }
+
+.xp-icon {
+    background-image: url("../assets/images/xp.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 90px;
+}

@@ -213,24 +213,12 @@ html, body {
     font-size: x-large;
 }
 
-#chore-item-list {
+#chore-item-available-list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.chore-item {
-    display: flex;
-    align-items: center;
-    background-color: #182d53;
-    color: #2aaae5;
-    border: #2aaae5 2px solid;
-    font-size: x-large;
-    font-weight: bold;
-    margin-bottom: 12px;
-    text-align: center;
-    width: 500px;
-    padding: 12px;
-}
+
 
 .chore-item-text {
     flex: 1;
@@ -262,15 +250,6 @@ html, body {
     padding: 0 10px 10px;
     color: #2aaae5;
     margin: 0 4px;
-}
-
-.xp-icon {
-    background-image: url("../assets/images/xp.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80px;
-    width: 90px;
 }
 
 .xp-value {

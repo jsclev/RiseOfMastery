@@ -5,9 +5,10 @@ export default {
     template: `
         <div id="inventory-container">
             <div v-for="component in components" 
+                 :id="component.category"
                  class="inventory-component container"
                  @click="setActiveComponent(component.componentId)">
-                
+
             </div>
         </div>`,
     computed: {

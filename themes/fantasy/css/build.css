@@ -1,5 +1,5 @@
-.bg-workshop {
-    background-image: url("../assets/images/build-bg.png");
+.bg-build {
+    background-image: url("../assets/images/build-bg2.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,24 +38,25 @@
 }
 
 #active-component-stats-container {
-    color: #2aaae5;
+    color: #A0522D;
 }
 
 .inventory-component {
     /*flex: 1 1 0;*/
-    border: 3px solid #2aaae5;
-    color: #2aaae5;
+    color: #A0522D;
     font-weight: bold;
     text-align: center;
-
-    width: 60px;
-    height: 60px;
+    border: 3px solid #A0522D;
+    width: 50px;
+    height: 50px;
     margin: 3px;
-    background-color: rgba(25, 45, 81, .7);
-    background-image: url("../assets/images/rocket-launger.png");
+    background-color: rgba(43, 29, 14, .6);
+
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 6px;
 
 }
 
@@ -84,10 +85,13 @@
     display: flex;
     flex-direction: column;
     min-width: 200px;
-    background-color: rgba(25, 45, 81, .6);
-    border: 3px solid #2aaae5;
+    background-image: url("../assets/images/active-unit-stats-bg.png");
+    background-size: contain;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    /*border: 3px solid #2aaae5;*/
     padding: 15px;
-    color: #2aaae5;
+    /*color: #2aaae5;*/
 }
 
 #active-unit-name {
@@ -111,7 +115,7 @@
 
 .stat-indicator-outer {
     height: 18px;
-    background-image: linear-gradient(to right, darkgreen, lime);
+    background-image: linear-gradient(to right, yellow, lime);
 }
 
 .stat-indicator-inner {
@@ -159,4 +163,36 @@
 
 .movement-indicator {
     background-image: url('../assets/images/movement.png');
+}
+
+#component-melee1 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee2 {
+    background-image: url("../assets/images/axe.png");
+}
+
+#component-melee3 {
+    background-image: url("../assets/images/double-axe.png");
+}
+
+#component-melee4 {
+    background-image: url("../assets/images/sword.png");
+}
+
+#component-melee5 {
+    background-image: url("../assets/images/bow.png");
+}
+
+#component-melee6 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee7 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee8 {
+    background-image: url("../assets/images/hammer.png");
 }

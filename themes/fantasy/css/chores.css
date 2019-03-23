@@ -1,0 +1,43 @@
+#chores-main-container {
+    background-image: url("../assets/images/chores-bg.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+#chores-left-panel {
+    margin-top: 110px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+#chores-right-panel {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.chore-item {
+    display: flex;
+    align-items: center;
+    /*background-color: #182d53;*/
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 500px;
+    /*border: 3px solid #A0522D;*/
+    /*background-color: rgba(43, 29, 14, .6);*/
+    padding: 10px;
+    /*color: #654321;*/
+    background-image: url("../assets/images/active-unit-stats-bg.png");
+    background-size: contain;
+    background-position: center;
+}

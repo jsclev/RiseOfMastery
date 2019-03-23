@@ -4,7 +4,7 @@ export default {
     name: 'AllUnits',
     template: `
         <div id="active-unit-stats-container">
-            <div>{{ unitName }} Loadout</div>
+            <div>{{ unitName }}</div>
             
             <div id="unit-loadout-stats">
                 <div>Weight: {{ weight }}</div>

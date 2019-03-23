@@ -4,7 +4,7 @@ export default {
     name: 'ActiveUnitStats',
     template: `
         <div id="active-unit-stats-container" class="container">
-            <div class="stats-container-title">{{ unitName }} Loadout</div>
+            <div class="stats-container-title">{{ unitName }}</div>
             
             <div id="unit-loadout-stats">
                 <div class="stat-container">

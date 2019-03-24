@@ -3,18 +3,7 @@
 }
 
 #assemble-units-inner-container {
-    width: 100%;
-    height: 100%;
-    flex: 12 1 auto;
-    display: flex;
     background-image: url("../assets/images/assemble-active-unit-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#assemble-units-center {
-    flex: 1 1 auto;
 }
 
 #inventory-container {

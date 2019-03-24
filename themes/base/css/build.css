@@ -27,18 +27,35 @@
 #assemble-units-left {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     margin-left: 15px;
     margin-top: 110px;
 }
 
-#assemble-units-right {
+#assemble-units-center {
     flex: 1 1 auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units-right {
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-top: 110px;
     margin-right: 15px;
+}
+
+#assemble-units-inner-container {
+    width: 100%;
+    height: 100%;
+    flex: 12 1 auto;
+    display: flex;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #active-unit-stats-container {

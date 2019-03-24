@@ -2,12 +2,8 @@
     background-image: url("../assets/images/build-bg.png");
 }
 
-#assemble-units-center {
-    flex: 12 1 auto;
+#assemble-units-inner-container {
     background-image: url("../assets/images/assemble-active-unit-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #inventory-container {

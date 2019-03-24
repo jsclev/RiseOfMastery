@@ -1,0 +1,55 @@
+.bg-build {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inventory-component {
+    /*flex: 1 1 0;*/
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 6px;
+}
+
+.inventory-component-icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#assemble-units-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+
+#assemble-units-right {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 110px;
+    margin-right: 15px;
+}
+
+#active-unit-stats-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background-size: contain;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    /*border: 3px solid #2aaae5;*/
+    padding: 15px;
+    font-weight: bold;
+}
+

@@ -91,3 +91,4 @@ const components = [{
 }];
 
 store.dispatch('componentManager/setAvailableComponents', components, {root: true});
+store.dispatch('unitManager/setName', 'Ronan', {root: true});

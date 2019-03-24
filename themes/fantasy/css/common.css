@@ -5,16 +5,5 @@
 .header-item {
     border: 3px solid #A0522D;
     background-color: rgba(43, 29, 14, .6);
-    padding: 10px;
     color: #A0522D;
-    margin: 0 4px;
-}
-
-.xp-icon {
-    background-image: url("../assets/images/xp.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80px;
-    width: 90px;
 }

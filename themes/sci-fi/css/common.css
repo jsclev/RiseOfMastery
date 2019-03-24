@@ -1,16 +1,5 @@
 .header-item {
     border: 3px solid #2aaae5;
     background-color: rgba(25, 45, 81, .6);
-    padding: 10px;
     color: #2aaae5;
-    margin: 0 4px;
-}
-
-.xp-icon {
-    background-image: url("../assets/images/xp.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80px;
-    width: 90px;
 }

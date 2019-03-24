@@ -1,33 +1,20 @@
 .bg-build {
     background-image: url("../assets/images/build-bg2.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-#assemble-units-left {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    margin-left: 15px;
-    margin-top: 110px;
-}
-
-#assemble-units-center {
+#assemble-units-inner-container {
+    width: 100%;
+    height: 100%;
     flex: 12 1 auto;
+    display: flex;
     background-image: url("../assets/images/assemble-active-unit-bg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#assemble-units-right {
+#assemble-units-center {
     flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-top: 110px;
-    margin-right: 15px;
 }
 
 #inventory-container {
@@ -44,27 +31,12 @@
 .inventory-component {
     /*flex: 1 1 0;*/
     color: #A0522D;
-    font-weight: bold;
-    text-align: center;
     border: 3px solid #A0522D;
-    width: 50px;
-    height: 50px;
-    margin: 3px;
     background-color: rgba(43, 29, 14, .6);
-
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    padding: 6px;
-
 }
 
 .inventory-component-icon {
     background-image: url("../../../assets/images/hammer-fist.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #assemble-units {
@@ -82,16 +54,7 @@
 }
 
 #active-unit-stats-container {
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
     background-image: url("../assets/images/active-unit-stats-bg.png");
-    background-size: contain;
-    background-position: center;
-    /*background-repeat: no-repeat;*/
-    /*border: 3px solid #2aaae5;*/
-    padding: 15px;
-    /*color: #2aaae5;*/
 }
 
 #active-unit-name {

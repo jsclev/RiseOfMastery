@@ -2,86 +2,93 @@ import store from '../../store/index.js'
 
 const components = [{
     componentId: 1,
-    name: 'Hammer Fist',
+    name: 'Cannon',
     level: 1,
     range: 1,
     cost: 1,
-    damage: 4,
-    weight: 10,
+    damage: 1.1,
+    weight: 2,
     minSplashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee1'
 }, {
     componentId: 2,
-    name: 'Boom Stick',
+    name: 'Grenado',
     level: 1,
     range: 1,
     cost: 1,
     damage: 4,
     weight: 10,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee2'
 }, {
     componentId: 3,
-    name: 'Armored Chassis',
+    name: 'Chain Cannon',
     level: 1,
     range: 1,
     cost: 1,
     damage: 4,
     weight: 10,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee3'
 }, {
-    componentId: 3,
-    name: 'Chromium Chassis',
+    componentId: 4,
+    name: 'Blunderbuss',
     level: 1,
     range: 1,
     cost: 1,
     damage: 4,
     weight: 3,
     splashDamage: 0,
-    defense: 3
-}, {
-    componentId: 4,
-    name: 'Photon Blaster',
-    level: 1,
-    range: 1,
-    cost: 1,
-    damage: 4,
-    weight: 10,
-    splashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee4'
 }, {
     componentId: 5,
-    name: 'Thrusters',
+    name: 'Long Sword',
     level: 1,
     range: 1,
     cost: 1,
     damage: 4,
     weight: 10,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee5'
 }, {
     componentId: 6,
-    name: 'Rocket Launcher',
+    name: 'Bow',
+    level: 1,
+    range: 1,
+    cost: 1,
+    damage: 4,
+    weight: 10,
+    splashDamage: 0,
+    defense: 3,
+    category: 'component-melee6'
+}, {
+    componentId: 7,
+    name: 'Spear',
     level: 1,
     range: 4,
     cost: 3,
     damage: 3,
     weight: 14,
     splashDamage: 2,
-    defense: 3
+    defense: 3,
+    category: 'component-melee7'
 }, {
-    componentId: 7,
-    name: 'Phaser Cannon',
+    componentId: 8,
+    name: 'Magic Staff',
     level: 1,
     range: 1,
     cost: 1,
     damage: 4,
     weight: 10,
     splashDamage: 0,
-    defense: 3
+    defense: 3,
+    category: 'component-melee8'
 }];
 
 store.dispatch('componentManager/setAvailableComponents', components, {root: true});
-store.dispatch('unitManager/setName', 'ROC-13', {root: true});
-
+store.dispatch('unitManager/setName', "Queen Anne's Revenge", {root: true});

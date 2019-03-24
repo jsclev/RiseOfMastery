@@ -14,7 +14,8 @@ export default {
     },
     template: `
         <div v-if="isVisible" id="assemble-units">
-            <div id="assemble-units-left">
+            <div id="assemble-units-inner-container">
+                        <div id="assemble-units-left">
                 <inventory></inventory>
                 <active-component-stats></active-component-stats>
             </div>
@@ -24,6 +25,8 @@ export default {
             <div id="assemble-units-right">
                 <active-unit-stats></active-unit-stats>
             </div>
+</div>
+
         </div>`,
     computed: {
         isVisible() {

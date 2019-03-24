@@ -1,13 +1,20 @@
 .bg-build {
-    background-image: url("../assets/images/build-bg.png");
+    background-image: url("../assets/images/build-bg.jpg");
 }
 
-#assemble-units-center {
+#assemble-units-inner-container {
+    width: 100%;
+    height: 100%;
     flex: 12 1 auto;
+    display: flex;
     background-image: url("../assets/images/assemble-active-unit-bg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#assemble-units-center {
+    flex: 1 1 auto;
 }
 
 #inventory-container {
@@ -18,15 +25,14 @@
 }
 
 #active-component-stats-container {
-    color: #2aaae5;
+    color: #A0522D;
 }
 
 .inventory-component {
     /*flex: 1 1 0;*/
-    border: 3px solid #2aaae5;
-    color: #2aaae5;
-    background-color: rgba(25, 45, 81, .7);
-    background-image: url("../assets/images/rocket-launger.png");
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .inventory-component-icon {
@@ -48,9 +54,7 @@
 }
 
 #active-unit-stats-container {
-    background-color: rgba(25, 45, 81, .6);
-    border: 3px solid #2aaae5;
-    color: #2aaae5;
+    background-image: url("../assets/images/active-unit-stats-bg.png");
 }
 
 #active-unit-name {
@@ -74,7 +78,7 @@
 
 .stat-indicator-outer {
     height: 18px;
-    background-image: linear-gradient(to right, darkgreen, lime);
+    background-image: linear-gradient(to right, yellow, lime);
 }
 
 .stat-indicator-inner {
@@ -122,4 +126,36 @@
 
 .movement-indicator {
     background-image: url('../assets/images/movement.png');
+}
+
+#component-melee1 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee2 {
+    background-image: url("../assets/images/axe.png");
+}
+
+#component-melee3 {
+    background-image: url("../assets/images/double-axe.png");
+}
+
+#component-melee4 {
+    background-image: url("../assets/images/sword.png");
+}
+
+#component-melee5 {
+    background-image: url("../assets/images/bow.png");
+}
+
+#component-melee6 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee7 {
+    background-image: url("../assets/images/hammer.png");
+}
+
+#component-melee8 {
+    background-image: url("../assets/images/hammer.png");
 }

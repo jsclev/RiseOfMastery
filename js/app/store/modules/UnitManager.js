@@ -2,7 +2,7 @@ export default {
     namespaced: true,
     state: {
         components: [],
-        name: 'Ronan'
+        name: null
     },
     getters: {
         damage(state) {
@@ -66,11 +66,17 @@ export default {
         },
         setComponents({commit}, components) {
             commit('setComponents', components);
+        },
+        setName({commit}, name) {
+            commit('setName', name);
         }
     },
     mutations: {
         setComponents(state, components) {
             state.components = components;
+        },
+        setName(state, name) {
+            state.name = name;
         }
     }
 };

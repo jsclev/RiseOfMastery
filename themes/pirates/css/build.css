@@ -44,6 +44,7 @@
 
 #active-unit-stats-container {
     background-image: url("../assets/images/active-unit-stats-bg.png");
+    border: 1px solid black;
 }
 
 #active-unit-name {
